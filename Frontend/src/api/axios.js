@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: process.env.VITE_API_URL || "http://localhost:5000/api",
-  withCredentials: false, // Important for static file access
+  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api",
+  withCredentials: false,
 });
 
 // Attach token to every request
